@@ -6,7 +6,10 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -52,6 +55,16 @@ public class MainActivity extends AppCompatActivity {
             });
             materialTimePicker.show(getSupportFragmentManager(), "tag_picker");
         });
+
+        // Если не работает будильник в android 10, нужно запросить разрешение на показ окон поверх других приложений
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.canDrawOverlays(this)) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                        Uri.parse("package:" + getPackageName()));
+                startActivity(intent);
+            }
+        }
+
     }
 
     private PendingIntent getAlarmInfoPendingIntent() {
