@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ClockName">Clock name: </string>          <!--Название будильника:  -->
+    <string name="AlarmList">List of alarms: </string>      <!--список будильников: -->
+    <string name="GetUp">Time to get up!</string>           <!--пора вставать!: -->
+
+    <string name="offClock">Switch off</string>             <!--выключить будильник-->
+    <string name="onClock">Switch on</string>               <!--Включить будильник -->
+    <string name="holdClock">Hold</string>                  <!--Отложить будильник -->
+    <string name="FunctionRetry">Retry</string>             <!--Повторить будильник-->
+
+    <string name="ChooseClock">Choose</string>              <!--Выбрать будильник -->
+    <string name="EditClock">Edit</string>                  <!--Изменить будильник -->
+
+    <string name="Vibration">Vibration</string>             <!--Вибрация -->
+    <string name="OneSignal">One beep</string>              <!--Один звуковой сигнал -->
+    <string name="personalSettings">Personal</string>       <!--Персональные настройки -->
+    <string name="signalMelody">Signal melody</string>      <!--Мелодия сигнала -->
+    <string name="signalName">Signal name</string>          <!--Название сигнала -->
+
+    <string name="dateOfTime">Date</string>                 <!--Дата будильника-->
+
+    <!--Названия дней недели-->
+    <string name="sunday">Sunday</string>       <!--Воскресенье-->
+    <string name="monday">Monday</string>       <!--Понедельник-->
+    <string name="tuesday">Tuesday</string>     <!--Вторник-->
+    <string name="wednesday">Wednesday</string> <!--Среда-->
+    <string name="thursday">Thursday</string>   <!--Четверг-->
+    <string name="friday">Friday</string>       <!--Пятница-->
+    <string name="saturday">Saturday</string>   <!--Суббота-->
+
+    <string name="everySunday">Every sunday</string>       <!--Каждое Воскресенье-->
+    <string name="everyMonday">Every monday</string>       <!--Каждый понедельник-->
+    <string name="everyTuesday">Every tuesday</string>     <!--Каждый вторник-->
+    <string name="everyWednesday">Every wednesday</string> <!--Каждую среду-->
+    <string name="everyThursday">Every thursday</string>   <!--Каждый четверг-->
+    <string name="everyFriday">Every friday</string>       <!--Каждую пятницу-->
+    <string name="everySaturday">Every saturday</string>   <!--Каждую субботу-->
+
+</resources>
