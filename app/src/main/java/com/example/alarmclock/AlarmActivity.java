@@ -4,15 +4,17 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class AlarmActivity extends AppCompatActivity {
-
     Ringtone    ringtone;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_alarm);
@@ -27,6 +29,11 @@ public class AlarmActivity extends AppCompatActivity {
             ringtone.play();
         }
     }
+
+    private void StopAlarmClock(View v){
+        ringtone.stop();
+    }
+
 
     @Override
     protected void onDestroy() {
