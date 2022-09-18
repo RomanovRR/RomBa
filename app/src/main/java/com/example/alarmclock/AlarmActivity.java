@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AlarmActivity extends AppCompatActivity {
+public class AlarmActivity extends AppCompatActivity { //AZAZAZA
     Ringtone    ringtone;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
